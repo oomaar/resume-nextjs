@@ -6,3 +6,6 @@ export {
     darkTheme,
     Main,
 } from "./styles/GlobalStyle";
+
+// Global components
+export { HeadTag } from "./HeadTag/HeadTag";
