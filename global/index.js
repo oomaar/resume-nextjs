@@ -5,6 +5,11 @@ export {
     lightTheme,
     darkTheme,
     Main,
+    xlScreen,
+    lgScreen,
+    mdScreen,
+    smScreen,
+    xsScreen,
 } from "./styles/GlobalStyle";
 
 // Global components
