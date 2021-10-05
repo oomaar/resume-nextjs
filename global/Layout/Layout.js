@@ -1,7 +1,9 @@
+import { Navbar } from "../../components";
+
 export const Layout = ({ children }) => {
     return (
         <div>
-            {/* Navbar */}
+            <Navbar />
             {children}
             {/* Contact */}
             {/* Footer */}
