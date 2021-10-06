@@ -1,3 +1,4 @@
+import { Hero } from "../../components";
 import { HeadTag, Main } from "../../global";
 import {
     Container,
@@ -8,7 +9,7 @@ export const HomeContainer = () => {
         <Container>
             <HeadTag title="Omar's Resume | Portfolio | Works" />
             <Main>
-                Home Container
+                <Hero />
             </Main>
         </Container>
     );
