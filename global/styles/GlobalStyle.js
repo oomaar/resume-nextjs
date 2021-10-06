@@ -62,7 +62,7 @@ export const darkTheme = {
   scrollThumbColor: `hsl(236, 12%, 36%)`,
   shadowColor: shadowDark,
   containerColor: `hsl(206, 4%, 10%)`,
-  textGradientWhite: `linear-gradient(hsl(0, 4%, 10%), hsl(240, 12%, 80%))`,
+  textGradient: `linear-gradient(to bottom, hsl(40, 74%, 73%), hsl(0, 4%, 40%), hsl(240, 12%, 80%), hsl(331, 63%, 72%))`,
   buttonColor: `hsl(236, 45%, 20%)`,
   buttonHover: `hsl(236, 45%, 18%)`,
   buttonText: `#fff`
@@ -70,8 +70,12 @@ export const darkTheme = {
 
 // Main pages layout
 export const Main = styled.main`
-  margin-top: calc(${headerHeight} * 2);
+  margin-top: calc(${headerHeight} * 1.5);
   padding: 0.5rem 0.8rem;
+
+  @media screen and (max-width: ${smScreen}) {
+    padding: 0.5rem 0.4rem;
+  }
 `;
 
 // GlobalStyle
@@ -98,5 +102,12 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     max-width: 100%;
+  }
+
+  h1, h2, h3, p, br, a {
+    ::selection {
+      background: hsl(40, 74%, 73%);
+      color: #fff;
+    }
   }
 `;
