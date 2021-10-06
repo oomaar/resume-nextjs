@@ -18,6 +18,10 @@ export const Nav = styled.nav`
   @media screen and (max-width: ${lgScreen}) {
     padding: 0.5rem;
   }
+
+  @media screen and (max-width: ${mdScreen}) {
+    justify-content: space-between;
+  }
 `;
 
 export const LinksList = styled.ul`
@@ -36,13 +40,13 @@ export const LinksList = styled.ul`
     transition: all 0.5s ease;
     display: flex;
     position: fixed;
-    top: 0;
+    top: -1rem;
     left: 0;
     right: 0;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     background-color: ${({ theme }) => theme.bodyColor};
     box-shadow: ${({ theme }) => theme.shadowColor};
     gap: 2rem;
@@ -71,6 +75,7 @@ export const Logo = styled.p`
   width: 50%;
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
+  margin: 0;
 
   @media screen and (max-width: ${xlScreen}) {
     width: 45%;
@@ -88,6 +93,10 @@ export const ThemeIcon = styled.div`
   width: 25%;
   font-size: ${({ theme }) => theme.fontSize.normalFontSize};
   cursor: pointer;
+
+  @media screen and (max-width: ${mdScreen}) {
+    justify-content: flex-end;
+  }
 `;
 
 export const BurgerIcon = styled.div`
@@ -101,6 +110,10 @@ export const BurgerIcon = styled.div`
   @media screen and (max-width: ${lgScreen}) {
     display: flex;
   }
+
+  @media screen and (max-width: ${mdScreen}) {
+    justify-content: flex-start;
+  }
 `;
 
 export const CloseIcon = styled.div`
@@ -109,10 +122,11 @@ export const CloseIcon = styled.div`
   font-size: ${({ theme }) => theme.fontSize.normalFontSize};
   color: ${({ theme }) => theme.textColor};
   position: absolute;
-  top: 0;
+  top: 0.4rem;
   right: 1rem;
 
   @media screen and (max-width: ${lgScreen}) {
     display: block;
   }
+  
 `;
