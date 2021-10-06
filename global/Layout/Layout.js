@@ -3,6 +3,10 @@ import { Navbar } from "../../components";
 import { darkTheme, GlobalStyle, lightTheme, typoTheme } from "..";
 import { useSelector } from "react-redux";
 import { selectDarkValue } from "../../redux/slices/darkSlice";
+import {
+    Container,
+    Stars,
+} from "./styledLayout";
 
 export const Layout = ({ children }) => {
     const darkValue = useSelector(selectDarkValue);
@@ -11,10 +15,13 @@ export const Layout = ({ children }) => {
         <ThemeProvider theme={typoTheme}>
             <ThemeProvider theme={darkValue === "light" ? lightTheme : darkTheme}>
                 <GlobalStyle />
-                <Navbar />
-                {children}
-                {/* Contact */}
-                {/* Footer */}
+                <Container>
+                    <Stars></Stars>
+                    <Navbar />
+                    {children}
+                    {/* Contact */}
+                    {/* Footer */}
+                </Container>
             </ThemeProvider>
         </ThemeProvider>
     );

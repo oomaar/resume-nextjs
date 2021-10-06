@@ -51,7 +51,9 @@ export const lightTheme = {
   textGradient: `linear-gradient(to right, hsl(40, 74%, 73%), hsl(331, 63%, 72%), hsl(267, 75%, 66%), hsl(194, 100%, 81%))`,
   buttonColor: `hsl(32, 80%, 74%)`,
   buttonHover: `hsl(32, 80%, 70%)`,
-  buttonText: `hsl(0, 20%, 25%)`
+  buttonText: `hsl(0, 20%, 25%)`,
+  starsColor: `hsl(40, 74%, 73%)`,
+  starsColorAlt: `hsl(331, 63%, 72%)`
 };
 
 export const darkTheme = {
@@ -65,7 +67,9 @@ export const darkTheme = {
   textGradient: `linear-gradient(to bottom, hsl(40, 74%, 73%), hsl(0, 4%, 40%), hsl(240, 12%, 80%), hsl(331, 63%, 72%))`,
   buttonColor: `hsl(236, 45%, 20%)`,
   buttonHover: `hsl(236, 45%, 18%)`,
-  buttonText: `#fff`
+  buttonText: `#fff`,
+  starsColor: `hsl(0, 0%, 94%)`,
+  starsColorAlt: `hsl(267, 75%, 66%)`
 };
 
 // Main pages layout
