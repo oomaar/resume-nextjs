@@ -70,7 +70,7 @@ export const darkTheme = {
 
 // Main pages layout
 export const Main = styled.main`
-  margin-top: ${headerHeight};
+  margin-top: calc(${headerHeight} * 2);
   padding: 0.5rem 0.8rem;
 `;
 
