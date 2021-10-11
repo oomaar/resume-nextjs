@@ -57,7 +57,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  bodyColor: `hsl(0, 0%, 13%)`,
+  bodyColor: `hsl(242, 97%, 5%)`,
   textColor: `hsl(236, 12%, 75%)`,
   titleColor: `hsl(0, 0%, 90%)`,
   scrollBarColor: `hsl(236, 12%, 48%)`,
