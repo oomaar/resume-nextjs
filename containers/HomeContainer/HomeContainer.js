@@ -1,4 +1,4 @@
-import { Hero } from "../../components";
+import { Bio, Hero } from "../../components";
 import { HeadTag, Main } from "../../global";
 import {
     Container,
@@ -10,6 +10,7 @@ export const HomeContainer = () => {
             <HeadTag title="Omar's Resume | Portfolio | Works" />
             <Main>
                 <Hero />
+                <Bio />
             </Main>
         </Container>
     );
