@@ -4,9 +4,9 @@ import { darkTheme, GlobalStyle, lightTheme, typoTheme } from "..";
 import { useSelector } from "react-redux";
 import { selectDarkValue } from "../../redux/slices/darkSlice";
 import {
-    Container,
-    Stars,
+    LayoutContainer
 } from "./styledLayout";
+import { Background } from "../../components/Background/Background";
 
 export const Layout = ({ children }) => {
     const darkValue = useSelector(selectDarkValue);
@@ -14,14 +14,14 @@ export const Layout = ({ children }) => {
     return (
         <ThemeProvider theme={typoTheme}>
             <ThemeProvider theme={darkValue === "light" ? lightTheme : darkTheme}>
-                <GlobalStyle />
-                <Container>
-                    <Stars></Stars>
+                <LayoutContainer>
+                    <GlobalStyle />
+                    <Background />
                     <Navbar />
                     {children}
                     {/* Contact */}
                     {/* Footer */}
-                </Container>
+                </LayoutContainer>
             </ThemeProvider>
         </ThemeProvider>
     );
