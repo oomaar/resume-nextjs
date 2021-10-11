@@ -14,8 +14,17 @@ import {
 } from "./styledBackground";
 
 export const Background = () => {
+    const handleMouseMove = e => {
+        var moveX = (e.pageX * -1 / 5);
+        var moveY = (e.pageY * -1 / 5);
+        document.getElementById("bg").style.transform = "translateX(" + moveX + "px) translateY(" + moveY + "px)";
+    };
+
     return (
-        <Bg>
+        <Bg
+            id="bg"
+            onMouseMove={(e) => handleMouseMove(e)}
+        >
             <BlueMoon></BlueMoon>
             <NightMoon></NightMoon>
             <SmallMoon></SmallMoon>
