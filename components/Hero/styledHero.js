@@ -1,31 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { lgScreen, mdScreen, smScreen } from '../../global';
-
-const Bounce = keyframes`
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-`;
-
-const Small = keyframes`
-  0% {
-    transform: translateY(0) scale(1);
-  }
-
-  50% {
-    transform: translateY(15px) scale(0);
-  }
-
-  100% {
-    transform: translateY(0) scale(1);
-  }
-`;
+import { Bounce, Small } from "../../global/animations/animations";
 
 export const Container = styled.div`
   display: flex;
@@ -113,6 +88,7 @@ export const Title = styled.h2`
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  z-index: 10;
 
   @media screen and (max-width: 1350px) {
     font-size: calc(${({ theme }) => theme.fontSize.bigFontSize} + 2rem);
