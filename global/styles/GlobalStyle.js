@@ -114,4 +114,19 @@ export const GlobalStyle = createGlobalStyle`
       color: #fff;
     }
   }
+
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: ${({ theme }) => theme.scrollBarColor};
+    border-radius: 1rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.scrollThumbColor};
+    border-radius: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${({ theme }) => theme.textColor};
+  }
 `;
