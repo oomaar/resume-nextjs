@@ -71,7 +71,6 @@ export const Hero = () => {
                 </Right>
             </Top>
             <Bottom scrollMouse={scrollMouse}>
-                {/* <BsMouse /> */}
                 <MouseDiv>
                     <Scroll></Scroll>
                 </MouseDiv>

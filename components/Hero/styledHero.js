@@ -16,6 +16,11 @@ export const Bottom = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: ${({ theme }) => theme.fontSize.smallFontSize};
+
+  span {
+    color: ${({ theme }) => theme.textColor};
+    letter-spacing: 0.1rem;
+  }
 `;
 
 export const MouseDiv = styled.div`
@@ -52,7 +57,7 @@ export const Right = styled.div`
 
   img {
     @media screen and (max-width: 1350px) {
-        width: 700px;
+      width: 700px;
     }
   }
 
