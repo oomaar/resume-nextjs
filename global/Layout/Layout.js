@@ -16,7 +16,7 @@ export const Layout = ({ children }) => {
             <ThemeProvider theme={darkValue === "light" ? lightTheme : darkTheme}>
                 <LayoutContainer>
                     <GlobalStyle />
-                    <Background />
+                    {/* <Background /> */}
                     <Navbar />
                     {children}
                     {/* Contact */}
