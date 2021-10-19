@@ -1,4 +1,4 @@
-import { Bio, Hero } from "../../components";
+import { Bio, Hero, Services } from "../../components";
 import { HeadTag, Main } from "../../global";
 import {
     Container,
@@ -11,6 +11,7 @@ export const HomeContainer = () => {
             <Main>
                 <Hero />
                 <Bio />
+                <Services />
             </Main>
         </Container>
     );
