@@ -1,21 +1,6 @@
 import styled from 'styled-components';
 import { lgScreen } from '../../global';
 
-export const BioContainer = styled.div`
-  color: ${({ theme }) => theme.textColor};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-`;
-
-export const Title = styled.h3`
-  color: ${({ theme }) => theme.titleColor};
-  font-size: ${({ theme }) => theme.fontSize.bigFontSize};
-  font-family: 'Shadows Into Light', cursive;
-`;
-
 export const BioSubContainer = styled.div`
   display: flex;
   justify-content: center;

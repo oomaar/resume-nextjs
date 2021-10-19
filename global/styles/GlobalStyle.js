@@ -82,6 +82,22 @@ export const Main = styled.main`
   }
 `;
 
+// Global Section Classes
+export const Container = styled.div`
+  color: ${({ theme }) => theme.textColor};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+`;
+
+export const Title = styled.h3`
+  color: ${({ theme }) => theme.titleColor};
+  font-size: ${({ theme }) => theme.fontSize.bigFontSize};
+  font-family: 'Shadows Into Light', cursive;
+`;
+
 // GlobalStyle
 export const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {

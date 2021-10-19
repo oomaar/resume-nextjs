@@ -1,8 +1,7 @@
 import Image from "next/image";
+import { Container, Title } from "../../global/styles/GlobalStyle";
 import {
-    BioContainer,
     BioSubContainer,
-    Title,
     ImageContainer,
     BioStory,
     ResumeButton,
@@ -10,7 +9,7 @@ import {
 
 export const Bio = () => {
     return (
-        <BioContainer>
+        <Container>
             <Title>Bio</Title>
 
             <BioSubContainer>
@@ -31,6 +30,6 @@ export const Bio = () => {
                 </BioStory>
             </BioSubContainer>
             <ResumeButton>Download Resume</ResumeButton>
-        </BioContainer>
+        </Container>
     );
 };
